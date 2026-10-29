@@ -260,3 +260,18 @@ p { text-wrap: pretty; }
     .addon strong { text-align: left; }
     .footer-inner { flex-direction: column; }
 }
+
+.addon-group { margin-top: 2.25rem; padding-bottom: 0.6rem; font-size: 0.93rem; font-weight: 500; color: var(--muted); }
+.addon-group:first-child { margin-top: 0; }
+
+.package { position: relative; }
+.package-tag { position: absolute; top: -0.85rem; left: clamp(1.5rem, 2.6vw, 2.25rem); margin: 0; }
+.package-free { margin-top: auto; margin-bottom: 1.5rem; padding: 0.85rem 1rem 1rem; border: 1px dashed currentColor; }
+.package-free-head { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.25rem 0.75rem; margin-bottom: 0.5rem; font-size: 0.9rem; }
+.package-free-head b { font-weight: 600; }
+.package-free-head span { color: var(--muted); }
+.package--featured .package-free-head span { color: #e6dcee; }
+.package-free ul { display: grid; gap: 0.35rem; font-size: 0.92rem; }
+.package-free li { position: relative; padding-left: 1.1rem; }
+.package-free li::before { content: "+"; position: absolute; left: 0; font-weight: 600; }
+.package-free + .button { margin-top: 0; }
