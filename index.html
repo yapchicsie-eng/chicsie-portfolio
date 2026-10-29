@@ -1,330 +1,275 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Chicsie Yap's portfolio featuring web development projects, website services, pricing, and contact information.">
+    <meta name="description" content="Chicsie Yap is a web developer and Information Technology student building clear, responsive websites. View selected projects, website packages and contact details.">
+    <meta name="theme-color" content="#1c1624">
     <title>Chicsie Yap | Web Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <a class="skip-link" href="#work">Skip to content</a>
+
     <header class="site-header">
-        <nav class="navbar container" aria-label="Main navigation">
-            <a href="#home" class="logo">CHICSIE<span>.</span></a>
+        <nav class="nav container" aria-label="Main navigation">
+            <a href="#home" class="brand">Chicsie Yap</a>
             <div class="nav-links">
+                <a href="#work">Work</a>
                 <a href="#about">About</a>
-                <a href="#projects">Projects</a>
                 <a href="#services">Services</a>
-                <a href="#contact" class="nav-contact">Contact Me</a>
+                <a href="#contact" class="nav-cta">Contact</a>
             </div>
         </nav>
     </header>
 
     <main>
-        <section class="hero section" id="home">
+        
+        <section class="hero" id="home">
             <div class="container hero-grid">
                 <div class="hero-content">
-                    <p class="eyebrow">ASPIRING WEB DEVELOPER</p>
                     <h1>
-                        Creating thoughtful
-                        websites for
-                        <span>real-world ideas.</span>
+                        <span class="line"><span>Chicsie</span></span>
+                        <span class="line"><span>Yap</span></span>
                     </h1>
-                    <p class="hero-description">
-                        Hi, I'm Chicsie Yap, an Information Technology
-                        student passionate about building clean,
-                        responsive, and user-friendly websites for
-                        businesses and people with ideas worth sharing.
-                    </p>
-                    <div class="hero-buttons">
-                        <a href="#projects" class="button button-primary">View My Work</a>
-                        <a href="#contact" class="button button-secondary">Let's Connect</a>
+                    <p class="hero-role">Web developer and Information Technology student</p>
+                    <p class="hero-lead">I build clear, responsive websites for small businesses and individuals, from a single landing page to a complete multi-page site.</p>
+                    <div class="hero-actions">
+                        <a href="#work" class="button button--dark">View selected work</a>
+                        <a href="#contact" class="button button--line">Get in touch</a>
                     </div>
-                    <p class="hero-note">
-                        Open to freelance projects, collaborations, and job opportunities.
-                    </p>
+                    <p class="hero-status muted">Open to freelance projects, collaborations and job opportunities.</p>
                 </div>
 
-                <div class="portrait-area">
+                <figure class="portrait">
                     <div class="portrait-frame">
-                        <img
-                            src="images/Capture.PNG"
-                            alt="Portrait of Chicsie Yap"
-                            class="portrait"
-                        >
+                        <img src="images/Capture.PNG" alt="Portrait of Chicsie Yap">
                     </div>
-                    <div class="portrait-caption">
-                        <span class="caption-dot"></span>
-                        <span>Learning, building, and growing through every project.</span>
-                    </div>
-                </div>
+                    <figcaption>Learning, building and growing through every project.</figcaption>
+                </figure>
             </div>
         </section>
 
-        <section class="section about-section" id="about">
-            <div class="container about-grid">
-                <div class="section-title">
-                    <p class="eyebrow">GET TO KNOW ME</p>
-                    <h2>Practical thinking. <span>Purposeful design.</span></h2>
-                </div>
-                <div class="about-content">
-                    <p>
-                        I'm an Information Technology student developing
-                        my skills in web design and development. I enjoy
-                        turning ideas into websites that are organized,
-                        easy to navigate, and accessible across different
-                        screen sizes.
-                    </p>
-                    <p>
-                        Whether I'm building a concept website or working
-                        on a business-focused project, I aim to understand
-                        its purpose and communicate information clearly.
-                        I'm continuously learning and looking for
-                        opportunities to improve through meaningful work.
-                    </p>
-                    <div class="skill-list">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>Responsive Design</span>
-                        <span>Web Development</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section projects-section" id="projects">
+        <section class="section" id="work" aria-labelledby="work-title">
             <div class="container">
-                <div class="section-heading">
-                    <div>
-                        <p class="eyebrow">PORTFOLIO</p>
-                        <h2>Selected <span>projects.</span></h2>
-                    </div>
-                    <p class="section-intro">
-                        A collection of website concepts and projects
-                        that reflect my developing skills and approach
-                        to web design.
-                    </p>
+                <div class="section-head">
+                    <h2 id="work-title">Selected work</h2>
+                    <p class="muted">Website projects that show how I plan, design and build, each one published and open to view.</p>
                 </div>
 
-                <div class="project-grid">
-                    <article class="project-card">
-                        <div class="project-preview preview-auto">
-                            <span class="preview-number">01</span>
-                            <div class="preview-text">
-                                <span class="preview-label">AUTO CARE</span>
-                                <strong>Elite Auto Spa</strong>
-                                <span>Care for every detail.</span>
-                            </div>
+                <!-- Lead project -->
+                <article class="feature">
+                    <div class="plate">
+                        <svg viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustration from the FORMA Interiors website: a pale armchair inside a terracotta arch">
+                            <rect width="600" height="400" fill="#e7dfd3"/>
+                            <path d="M410 0h190v400H340Z" fill="#f4ecdd" opacity=".7"/>
+                            <rect y="318" width="600" height="82" fill="#b9ae9c"/>
+                            <rect y="314" width="600" height="6" fill="#a39988"/>
+                            <path d="M190 318V170a110 110 0 0 1 220 0v148Z" fill="#d9ccba"/>
+                            <path d="M204 318V172a96 96 0 0 1 192 0v146Z" fill="#b4684b"/>
+                            <path d="M204 318V172a96 96 0 0 1 96-96v242Z" fill="#a25d44" opacity=".5"/>
+                            <rect x="262" y="214" width="76" height="100" rx="38" fill="#efe8dc"/>
+                            <rect x="246" y="276" width="108" height="46" rx="22" fill="#f8f3ea"/>
+                            <path d="M262 322v26M338 322v26" stroke="#2a2826" stroke-width="5" stroke-linecap="round"/>
+                            <path d="M392 322v-34a22 8 0 0 1 44 0v34Z" fill="#d6ccbb"/>
+                            <ellipse cx="414" cy="288" rx="22" ry="7" fill="#ece5d7"/>
+                            <path d="M96 346c-8-2-10-22-6-38 3-10 20-10 22 0 4 16 2 36-8 38z" fill="#2a2826"/>
+                            <g stroke="#6b5b4d" stroke-width="2" fill="none" stroke-linecap="round"><path d="M98 310C96 250 84 200 66 160"/><path d="M98 310C104 250 118 200 146 156"/><path d="M98 310C100 240 96 190 104 130"/></g>
+                        </svg>
+                    </div>
+                    <div class="feature-body">
+                        <div>
+                            <h3>FORMA Interiors</h3>
+                            <p>A three-page website for a fictional interior design studio. It features architectural photography, large editorial typography, a project gallery, a team page and a working contact form, all in a restrained warm palette and fully responsive. Built as a demo by Cheeky Website Services.</p>
                         </div>
-                        <div class="project-info">
-                            <p class="project-category">Business Website</p>
-                            <h3>Elite Auto Spa</h3>
-                            <p>
-                                A business website concept for an
-                                automotive detailing service, designed
-                                to present services in a clear and
-                                professional way.
-                            </p>
-                            <div class="project-links">
-                                <a href="https://yapchicsie-eng.github.io/elite-auto-spa/" target="_blank" rel="noopener noreferrer">Live Website ↗</a>
-                                <a href="https://github.com/yapchicsie-eng/elite-auto-spa" target="_blank" rel="noopener noreferrer">Source Code ↗</a>
-                            </div>
+                        <dl class="facts">
+                            <dt>Type</dt><dd>Multi-page business website</dd>
+                            <dt>Pages</dt><dd>Home, Projects and services, About and contact</dd>
+                            <dt>Built with</dt><dd>HTML, CSS and JavaScript</dd>
+                            <dt>Status</dt><dd>Live demo</dd>
+                        </dl>
+                        <div class="project-links">
+                            <a class="link" href="https://yapchicsie-eng.github.io/forma-interiors/" target="_blank" rel="noopener noreferrer">View live website</a>
+                            <a class="link" href="https://github.com/yapchicsie-eng/forma-interiors" target="_blank" rel="noopener noreferrer">Source code</a>
                         </div>
-                    </article>
+                    </div>
+                </article>
 
-                    <article class="project-card">
-                        <div class="project-preview preview-study">
-                            <span class="preview-number">02</span>
-                            <div class="preview-text">
-                                <span class="preview-label">QVAC</span>
-                                <strong>Study Buddy</strong>
-                                <span>Make learning feel simpler.</span>
+                <div class="work-list">
+                    <h3 class="work-list-title">More projects</h3>
+                    <ul>
+                        <li class="work-row">
+                            <span class="swatch swatch--auto" aria-hidden="true"></span>
+                            <div class="work-main">
+                                <h3>Elite Auto Spa</h3>
+                                <p>A business website concept for an automotive detailing service, presenting its services clearly and professionally.</p>
                             </div>
-                        </div>
-                        <div class="project-info">
-                            <p class="project-category">Learning Concept</p>
-                            <h3>Study Buddy</h3>
-                            <p>
-                                A student-focused project exploring a
-                                more organized and approachable digital
-                                learning experience.
+                            <p class="work-type">Business website</p>
+                            <p class="work-links">
+                                <a class="link" href="https://yapchicsie-eng.github.io/elite-auto-spa/" target="_blank" rel="noopener noreferrer">Live website</a>
+                                <a class="link" href="https://github.com/yapchicsie-eng/elite-auto-spa" target="_blank" rel="noopener noreferrer">Source</a>
                             </p>
-                            <div class="project-links">
-                                <a href="https://github.com/yapchicsie-eng/qvac-study-buddy" target="_blank" rel="noopener noreferrer">Source Code ↗</a>
+                        </li>
+                        <li class="work-row">
+                            <span class="swatch swatch--study" aria-hidden="true"></span>
+                            <div class="work-main">
+                                <h3>Study Buddy</h3>
+                                <p>A student-focused project exploring a more organized and approachable digital learning experience.</p>
                             </div>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="project-preview preview-cafe">
-                            <span class="preview-number">03</span>
-                            <div class="preview-text">
-                                <span class="preview-label">CAFÉ CONCEPT</span>
-                                <strong>Luna &amp; Bean</strong>
-                                <span>A little pause in your day.</span>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <p class="project-category">Hospitality Website</p>
-                            <h3>Luna &amp; Bean Café</h3>
-                            <p>
-                                A café website concept with a warm
-                                visual direction intended to make a
-                                brand feel inviting and memorable.
+                            <p class="work-type">Learning concept</p>
+                            <p class="work-links">
+                                <a class="link" href="https://github.com/yapchicsie-eng/qvac-study-buddy" target="_blank" rel="noopener noreferrer">Source</a>
                             </p>
-                            <div class="project-links">
-                                <a href="https://yapchicsie-eng.github.io/luna-bean-cafe/" target="_blank" rel="noopener noreferrer">Live Website ↗</a>
-                                <a href="https://github.com/yapchicsie-eng/luna-bean-cafe" target="_blank" rel="noopener noreferrer">Source Code ↗</a>
+                        </li>
+                        <li class="work-row">
+                            <span class="swatch swatch--cafe" aria-hidden="true"></span>
+                            <div class="work-main">
+                                <h3>Luna &amp; Bean Café</h3>
+                                <p>A café website concept with a warm visual direction, intended to make the brand feel inviting and memorable.</p>
                             </div>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="project-preview preview-northline">
-                            <span class="preview-number">04</span>
-                            <div class="preview-text">
-                                <span class="preview-label">CREATIVE STUDIO</span>
-                                <strong>Northline Creative</strong>
-                                <span>Ideas into identity.</span>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <p class="project-category">Creative Business</p>
-                            <h3>Northline Creative</h3>
-                            <p>
-                                A creative studio website concept
-                                focused on a clear brand identity,
-                                strong messaging, and a professional
-                                online presence.
+                            <p class="work-type">Hospitality website</p>
+                            <p class="work-links">
+                                <a class="link" href="https://yapchicsie-eng.github.io/luna-bean-cafe/" target="_blank" rel="noopener noreferrer">Live website</a>
+                                <a class="link" href="https://github.com/yapchicsie-eng/luna-bean-cafe" target="_blank" rel="noopener noreferrer">Source</a>
                             </p>
-                            <div class="project-links">
-                                <a href="https://yapchicsie-eng.github.io/northline-creative/" target="_blank" rel="noopener noreferrer">Live Website ↗</a>
-                                <a href="https://github.com/yapchicsie-eng/northline-creative" target="_blank" rel="noopener noreferrer">Source Code ↗</a>
+                        </li>
+                        <li class="work-row">
+                            <span class="swatch swatch--northline" aria-hidden="true"></span>
+                            <div class="work-main">
+                                <h3>Northline Creative</h3>
+                                <p>A creative studio website concept built around a clear brand identity, strong messaging and a professional online presence.</p>
                             </div>
-                        </div>
-                    </article>
+                            <p class="work-type">Creative business</p>
+                            <p class="work-links">
+                                <a class="link" href="https://yapchicsie-eng.github.io/northline-creative/" target="_blank" rel="noopener noreferrer">Live website</a>
+                                <a class="link" href="https://github.com/yapchicsie-eng/northline-creative" target="_blank" rel="noopener noreferrer">Source</a>
+                            </p>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
 
-        <section class="section services-section" id="services">
+        <section class="section about" id="about" aria-labelledby="about-title">
             <div class="container">
-                <div class="section-heading">
-                    <div>
-                        <p class="eyebrow">WEBSITE PACKAGES</p>
-                        <h2>Simple pricing. <span>Real value.</span></h2>
+                <div class="about-grid">
+                    <h2 id="about-title">Practical thinking, purposeful design.</h2>
+                    <div class="about-copy">
+                        <p class="lead">I am an Information Technology student developing my skills in web design and development.</p>
+                        <p>I turn ideas into websites that are organized, easy to navigate and accessible on every screen size. Whether the project is a concept or a working business site, I start by understanding its purpose and who it needs to speak to, then communicate that information clearly.</p>
+                        <p>I am continuing to learn and look for opportunities to improve through meaningful work.</p>
+                        <ul class="skills" aria-label="Skills">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Responsive design</li>
+                            <li>Web development</li>
+                        </ul>
                     </div>
-                    <p class="section-intro">
-                        Affordable website packages for individuals and small
-                        businesses looking to establish their online presence.
-                    </p>
                 </div>
 
-                <div class="services-grid pricing-grid">
-                    <article class="service-card">
-                        <span class="service-number">01 / STARTER</span>
+                <div class="principles">
+                    <div class="principle">
+                        <h3>Clarity first</h3>
+                        <p>Every page has one job. I organize content so visitors find what they came for without effort.</p>
+                    </div>
+                    <div class="principle">
+                        <h3>Built for every screen</h3>
+                        <p>Layouts are tested from mobile to desktop, so the experience stays consistent on any device.</p>
+                    </div>
+                    <div class="principle">
+                        <h3>Delivered live</h3>
+                        <p>Each project is published and ready to share, with deployment included in every package.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="services" aria-labelledby="services-title">
+            <div class="container">
+                <div class="section-head">
+                    <h2 id="services-title">Website packages</h2>
+                    <p class="muted">Affordable packages for individuals and small businesses establishing their online presence.</p>
+                </div>
+
+                <div class="packages">
+                    <article class="package">
                         <h3>Starter Landing Page</h3>
-                        <p class="price">₱1,500<span>+</span></p>
-                        <p class="pricing-description">
-                            Perfect for a personal brand, service, or simple promotion.
-                        </p>
-                        <ul class="pricing-features">
+                        <p class="package-price">₱1,500+</p>
+                        <p class="package-desc">For a personal brand, a service or a simple promotion.</p>
+                        <ul class="package-list">
                             <li>One page with up to 4 sections</li>
                             <li>Responsive design for mobile and desktop</li>
                             <li>Contact and social media buttons</li>
                             <li>Website deployment included</li>
                         </ul>
-                        <a href="https://t.me/itschikay" class="button button-secondary pricing-button" target="_blank" rel="noopener noreferrer">Inquire Now ↗</a>
+                        <a href="https://t.me/itschikay" class="button button--line" target="_blank" rel="noopener noreferrer">Inquire now</a>
                     </article>
 
-                    <article class="service-card featured-package">
-                        <span class="service-number">02 / BUSINESS</span>
-                        <span class="popular-label">✦ MOST POPULAR</span>
+                    <article class="package package--featured">
+                        <span class="package-tag">Most popular</span>
                         <h3>Business Website</h3>
-                        <p class="price">₱3,000<span>+</span></p>
-                        <p class="pricing-description">
-                            For small businesses that need a professional online presence.
-                        </p>
-                        <ul class="pricing-features">
-                            <li>One page with up to 6–7 sections</li>
+                        <p class="package-price">₱3,000+</p>
+                        <p class="package-desc">For small businesses that need a professional online presence.</p>
+                        <ul class="package-list">
+                            <li>One page with up to 6 to 7 sections</li>
                             <li>Services and pricing information</li>
                             <li>Gallery and contact section</li>
                             <li>Responsive design</li>
                             <li>Website deployment included</li>
                         </ul>
-                        <a href="https://t.me/itschikay" class="button button-primary pricing-button" target="_blank" rel="noopener noreferrer">Inquire Now ↗</a>
+                        <a href="https://t.me/itschikay" class="button button--light" target="_blank" rel="noopener noreferrer">Inquire now</a>
                     </article>
 
-                    <article class="service-card">
-                        <span class="service-number">03 / EXPANDED</span>
+                    <article class="package">
                         <h3>Multi-Page Website</h3>
-                        <p class="price">₱5,000<span>+</span></p>
-                        <p class="pricing-description">
-                            For projects that need separate pages and more room to grow.
-                        </p>
-                        <ul class="pricing-features">
+                        <p class="package-price">₱5,000+</p>
+                        <p class="package-desc">For projects that need separate pages and room to grow.</p>
+                        <ul class="package-list">
                             <li>Up to 3 pages</li>
                             <li>Responsive design</li>
                             <li>Navigation and custom sections</li>
                             <li>Contact links</li>
                             <li>Website deployment included</li>
                         </ul>
-                        <a href="https://t.me/itschikay" class="button button-secondary pricing-button" target="_blank" rel="noopener noreferrer">Inquire Now ↗</a>
+                        <a href="https://t.me/itschikay" class="button button--line" target="_blank" rel="noopener noreferrer">Inquire now</a>
                     </article>
                 </div>
 
-                <div class="pricing-extras">
-                    <h3>Optional Add-ons</h3>
-                    <div class="extras-list">
-                        <div class="extra-item">
-                            <span>Additional page</span>
-                            <strong>+₱700 / page</strong>
-                        </div>
-                        <div class="extra-item">
-                            <span>Minor revisions after completion</span>
-                            <strong>₱300–₱500</strong>
-                        </div>
-                        <div class="extra-item">
-                            <span>Optional website maintenance</span>
-                            <strong>₱500–₱1,000 / month</strong>
-                        </div>
+                <div class="addons">
+                    <h3>Optional add-ons</h3>
+                    <div>
+                        <div class="addon"><span>Additional page</span><strong>+₱700 per page</strong></div>
+                        <div class="addon"><span>Minor revisions after completion</span><strong>₱300 to ₱500</strong></div>
+                        <div class="addon"><span>Optional website maintenance</span><strong>₱500 to ₱1,000 per month</strong></div>
                     </div>
                 </div>
 
-                <p class="service-note">
-                    Prices are starting rates and may vary depending on project
-                    requirements. GitHub Pages hosting is free when suitable.
-                    Custom domain fees are separate and paid by the client.
+                <p class="services-note">
+                    Prices are starting rates and may vary depending on project requirements. GitHub Pages hosting is free when suitable. Custom domain fees are separate and paid by the client.
                 </p>
             </div>
         </section>
 
-        <section class="section contact-section" id="contact">
+        <!-- CONTACT -->
+        <section class="section contact" id="contact" aria-labelledby="contact-title">
             <div class="container contact-grid">
-                <div class="contact-heading">
-                    <p class="eyebrow">LET'S CONNECT</p>
-                    <h2>Have a project or opportunity in <span>mind?</span></h2>
-                    <p>
-                        If you're a small-business owner looking for a
-                        website, a recruiter with an opportunity, or
-                        someone interested in collaborating, I'd love
-                        to hear from you.
-                    </p>
+                <div>
+                    <h2 id="contact-title">Let's discuss your project.</h2>
+                    <p class="contact-copy">If you are a small-business owner looking for a website, a recruiter with an opportunity or someone interested in collaborating, I would be glad to hear from you.</p>
                 </div>
-
-                <div class="contact-details">
-                    <p class="contact-label">EMAIL ME</p>
-                    <a href="mailto:yapchicsie@gmail.com" class="contact-email">
-                        yapchicsie@gmail.com
-                    </a>
-                    <a href="https://t.me/itschikay" class="button button-light" target="_blank" rel="noopener noreferrer">
-                        Message Me on Telegram ↗
-                    </a>
-                    <div class="social-links">
-                        <a href="https://t.me/itschikay" target="_blank" rel="noopener noreferrer">Telegram ↗</a>
-                        <a href="https://github.com/yapchicsie-eng" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
-                        <a href="https://chicsie.is-a.dev" target="_blank" rel="noopener noreferrer">Portfolio ↗</a>
+                <div>
+                    <p class="contact-label">Email</p>
+                    <a href="mailto:yapchicsie@gmail.com" class="contact-email link">yapchicsie@gmail.com</a>
+                    <div class="contact-actions">
+                        <a href="https://t.me/itschikay" class="button button--light" target="_blank" rel="noopener noreferrer">Message me on Telegram</a>
+                    </div>
+                    <div class="contact-links">
+                        <a class="link" href="https://t.me/itschikay" target="_blank" rel="noopener noreferrer">Telegram</a>
+                        <a class="link" href="https://github.com/yapchicsie-eng" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <a class="link" href="https://chicsie.is-a.dev" target="_blank" rel="noopener noreferrer">Portfolio</a>
                     </div>
                 </div>
             </div>
@@ -332,10 +277,9 @@
     </main>
 
     <footer class="site-footer">
-        <div class="container footer-content">
-            <a href="#home" class="logo">CHICSIE<span>.</span></a>
+        <div class="container footer-inner">
             <p>Designed and built by Chicsie Yap.</p>
-            <a href="#home" class="back-to-top">Back to top ↑</a>
+            <a href="#home">Back to top</a>
         </div>
     </footer>
 </body>
